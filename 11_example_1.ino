@@ -78,7 +78,7 @@ void loop() {
 
   // adjust servo position according to the USS read value
   // add your code here!
-  long angle = map(dist_ema,_DIST_MIN,_DIST_MAX,10,170);
+  long angle = map(dist_ema,_DIST_MIN,_DIST_MAX,0,180);
   myservo.write(angle);
 
   // output the distance to the serial port
